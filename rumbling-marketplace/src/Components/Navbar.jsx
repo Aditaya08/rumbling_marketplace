@@ -25,22 +25,22 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">
   {pages.map((text, idx) => (
-    <NavLink
-      key={idx}
-      to={`/${text.toLowerCase()}`}
-      className={({ isActive }) =>
-        `relative text-white text-lg font-semibold font-mono tracking-wider 
-        overflow-hidden transition-transform duration-300 
-        before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px] 
-        before:bg-white before:origin-left before:scale-x-0 
-        hover:before:scale-x-100 
-        hover:before:transition-transform before:duration-300 
-        hover:translate-y-1 hover:text-gray-300 
-        ${isActive ? "text-purple-300 before:scale-x-100" : ""}`
-      }
-    >
-      {text}
-    </NavLink>
+  <NavLink
+  key={idx}
+  to={text.toLowerCase() === "home" ? "/" : `/${text.toLowerCase()}`}
+  className={({ isActive }) =>
+    `relative text-white text-lg font-semibold font-mono tracking-wider 
+    overflow-hidden transition-transform duration-300 
+    before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px] 
+    before:bg-white before:origin-left before:scale-x-0 
+    hover:before:scale-x-100 
+    hover:before:transition-transform before:duration-300 
+    hover:translate-y-1 hover:text-gray-300 
+    ${isActive ? "text-purple-300 before:scale-x-100" : ""}`
+  }
+>
+  {text}
+</NavLink>
   ))}
 </div>
       </div>
