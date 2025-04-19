@@ -1,0 +1,259 @@
+[
+    {
+      "_id": {
+        "$oid": "67e92b632ae139655fa6c425"
+      },
+      "title": "Digital Collectible",
+      "description": "Rare digital item",
+      "image": "https://i.pinimg.com/736x/21/a7/8e/21a78ee8b3c3940bafa81a4e6dc6a4f3.jpg",
+      "currentBid": 50,
+      "bidTimer": {
+        "$date": "2025-04-03T12:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e7d504db3ceb63ffa5badd"
+      },
+      "category": "NFTs",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-30T11:30:43.498Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-30T11:30:43.498Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea59e38061633fe3a0e264"
+      },
+      "title": "Vintage Clock",
+      "description": "A classic wind-up clock from the 1950s.",
+      "image": "https://example.com/vintage_clock.jpg",
+      "currentBid": 40,
+      "bidTimer": {
+        "$date": "2025-04-06T14:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94d6ad9955fe82cb077df"
+      },
+      "category": "Antiques",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:01:23.724Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:01:23.724Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5a3c8061633fe3a0e267"
+      },
+      "title": "Gaming Mouse",
+      "description": "High-precision gaming mouse with RGB lights.",
+      "image": "https://example.com/gaming_mouse.jpg",
+      "currentBid": 35,
+      "bidTimer": {
+        "$date": "2025-04-07T10:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94d92d9955fe82cb077e2"
+      },
+      "category": "Electronics",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:02:52.520Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:02:52.520Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5aac8061633fe3a0e26a"
+      },
+      "title": "Eco-Friendly Water Bottle",
+      "description": "Reusable stainless steel bottle, 500ml.",
+      "image": "https://example.com/water_bottle.jpg",
+      "currentBid": 15,
+      "bidTimer": {
+        "$date": "2025-04-08T16:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94d9dd9955fe82cb077e5"
+      },
+      "category": "Eco Products",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:04:44.993Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:04:44.993Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5b5d8061633fe3a0e26e"
+      },
+      "title": "Leather Journal",
+      "description": "Hand-stitched leather-bound journal, 200 pages.",
+      "image": "https://example.com/leather_journal.jpg",
+      "currentBid": 30,
+      "bidTimer": {
+        "$date": "2025-04-09T11:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94de4d9955fe82cb077eb"
+      },
+      "category": "Stationery",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:07:41.790Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:07:41.790Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5bdb8061633fe3a0e272"
+      },
+      "title": "Bluetooth Speaker",
+      "description": "Portable speaker with 10-hour battery life.",
+      "image": "https://example.com/bluetooth_speaker.jpg",
+      "currentBid": 45,
+      "bidTimer": {
+        "$date": "2025-04-10T13:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94da8d9955fe82cb077e8"
+      },
+      "category": "Electronics",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:09:47.786Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:09:47.786Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5cae8061633fe3a0e278"
+      },
+      "title": "Hand-Carved Wooden Statue",
+      "description": "Intricate wooden statue of a bird, 12 inches tall.",
+      "image": "https://example.com/wooden_statue.jpg",
+      "currentBid": 50,
+      "bidTimer": {
+        "$date": "2025-04-15T14:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94df6d9955fe82cb077ee"
+      },
+      "category": "Artisan Crafts",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:13:18.817Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:13:18.817Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5cf18061633fe3a0e27c"
+      },
+      "title": "Smartwatch",
+      "description": "Fitness tracker with heart rate monitor.",
+      "image": "https://example.com/smartwatch.jpg",
+      "currentBid": 80,
+      "bidTimer": {
+        "$date": "2025-04-16T10:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94e25d9955fe82cb077f1"
+      },
+      "category": "Electronics",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:14:25.774Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:14:25.774Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea5d428061633fe3a0e27f"
+      },
+      "title": "Antique Pocket Watch",
+      "description": "Fully functional 1920s pocket watch.",
+      "image": "https://example.com/pocket_watch.jpg",
+      "currentBid": 130,
+      "bidTimer": {
+        "$date": "2025-04-17T16:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94e3fd9955fe82cb077f4"
+      },
+      "category": "Antiques",
+      "previousBids": [
+        {
+          "bidder": "507f1f77bcf86cd799439011",
+          "amount": 110,
+          "timestamp": "2025-03-31T09:20:00.000Z"
+        },
+        {
+          "bidder": "507f191e810c19729de860ea",
+          "amount": 120,
+          "timestamp": "2025-03-31T09:25:00.000Z"
+        },
+        {
+          "bidder": "507f1f77bcf86cd799439012",
+          "amount": 130,
+          "timestamp": "2025-03-31T09:30:00.000Z"
+        }
+      ],
+      "createdAt": {
+        "$date": "2025-03-31T09:15:46.880Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:15:46.880Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "67ea60bef895e4a93c5440d1"
+      },
+      "title": "Limited Edition Game Controller",
+      "description": "Custom-designed controller for collectors.",
+      "image": "https://example.com/game_controller.jpg",
+      "currentBid": 70,
+      "bidTimer": {
+        "$date": "2025-04-19T13:00:00.000Z"
+      },
+      "seller": {
+        "$oid": "67e94e4ad9955fe82cb077f7"
+      },
+      "category": "Gaming",
+      "previousBids": [],
+      "createdAt": {
+        "$date": "2025-03-31T09:30:38.320Z"
+      },
+      "updatedAt": {
+        "$date": "2025-03-31T09:30:38.320Z"
+      },
+      "__v": 0
+    }
+  ]
+  
