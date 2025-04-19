@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = ({ user }) => {
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    window.location.reload(); // Refresh to update UI
+  };
+
   return (
     <div className="bg-gradient-to-b from-black to-gray-900 min-h-screen py-8 text-white px-4 md:px-8 lg:px-16">
       {/* Hero Section */}
@@ -20,14 +26,65 @@ const Home = () => {
         <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-xl mx-auto">
           The ultimate decentralized marketplace where you can bid, buy, and sell both NFTs and real-world products securely.
         </p>
-        <NavLink to = "/auctions">
-        <motion.button
-          className="mt-6 bg-purple-600 hover:bg-purple-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
-          whileHover={{ scale: 1.1 }}
-        >
-          Explore Marketplace
-        </motion.button>
-        </NavLink>
+        {!user?.authenticated ? (
+          <div className="mt-6 flex justify-center gap-4 flex-wrap">
+            <NavLink to="/bidder/login">
+              <motion.button
+                className="bg-purple-600 hover:bg-purple-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                whileHover={{ scale: 1.1 }}
+              >
+                Bidder Login
+              </motion.button>
+            </NavLink>
+            <NavLink to="/seller/login">
+              <motion.button
+                className="bg-purple-600 hover:bg-purple-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                whileHover={{ scale: 1.1 }}
+              >
+                Seller Login
+              </motion.button>
+            </NavLink>
+            <NavLink to="/bidder/register">
+              <motion.button
+                className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                whileHover={{ scale: 1.1 }}
+              >
+                Bidder Register
+              </motion.button>
+            </NavLink>
+            <NavLink to="/seller/register">
+              <motion.button
+                className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                whileHover={{ scale: 1.1 }}
+              >
+                Seller Register
+              </motion.button>
+            </NavLink>
+          </div>
+        ) : (
+          <div className="mt-6 flex flex-col items-center gap-4">
+            <p className="text-lg text-green-400">
+              Welcome, {user.username}! (Role: {user.role})
+            </p>
+            <div className="flex gap-4">
+              <NavLink to="/auctions">
+                <motion.button
+                  className="bg-purple-600 hover:bg-purple-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  Explore Marketplace
+                </motion.button>
+              </NavLink>
+              <motion.button
+                onClick={handleLogout}
+                className="bg-red-600 hover:bg-red-700 transition text-white px-6 py-3 rounded-xl text-lg shadow-md"
+                whileHover={{ scale: 1.1 }}
+              >
+                Logout
+              </motion.button>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Featured Listings */}
