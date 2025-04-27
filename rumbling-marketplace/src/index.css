@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+.floating-cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(147, 51, 234, 0.2); /* Purple with transparency */
+    border: 1px solid rgba(147, 51, 234, 0.5);
+    transform-style: preserve-3d;
+    animation: floatRotate 10s infinite linear;
+    pointer-events: none;
+  }
+  
+  .cube-1 {
+    top: 10%;
+    left: 15%;
+    animation-duration: 12s;
+  }
+  
+  .cube-2 {
+    top: 60%;
+    right: 20%;
+    animation-duration: 15s;
+    animation-delay: -3s;
+  }
+  
+  .cube-3 {
+    bottom: 15%;
+    left: 30%;
+    animation-duration: 18s;
+    animation-delay: -6s;
+  }
+  
+  @keyframes floatRotate {
+    0% {
+      transform: translateZ(-100px) rotateX(0deg) rotateY(0deg) translateY(0);
+    }
+    50% {
+      transform: translateZ(100px) rotateX(180deg) rotateY(180deg) translateY(-50px);
+    }
+    100% {
+      transform: translateZ(-100px) rotateX(360deg) rotateY(360deg) translateY(0);
+    }
+  }
