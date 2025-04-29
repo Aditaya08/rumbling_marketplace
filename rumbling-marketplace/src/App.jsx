@@ -8,7 +8,8 @@ import SellerLogin from "./pages/SellerLogin";
 import BidderLogin from "./pages/BidderLogin";
 import BidderRegister from "./pages/BidderRegister";
 import SellerRegister from "./pages/SellerRegister";
-import CreateProduct from "./Components/CreateProduct"; // Already imported, just verifying
+import CreateProduct from "./Components/CreateProduct"; 
+import Dashboard from "./pages/Dashboard";// Already imported, just verifying
 import { useState } from "react";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           path="/seller/create-product"
           element={<ProtectedRoute element={<CreateProduct user={user} />} allowedRole="seller" />}
         />
+         <Route path="/dashboard" element={<Dashboard />} /> 
       </Routes>
     </Router>
   );
